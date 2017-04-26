@@ -1,0 +1,23 @@
+#Main_Outer_Path {
+	stroke-dasharray: 2800px;
+	stroke-dashoffset: 2800px;
+	animation: offset 2s linear forwards;
+	stroke: black;
+	fill: #FFF;
+
+}
+#Inner_Lines {
+	stroke-dasharray: calc(337px );
+	stroke-dashoffset: calc(337px );
+	animation: offset 0.4s linear forwards;
+	animation-delay: 1.6s;
+	stroke: black;
+}
+
+@keyframes offset {
+	to {
+		stroke-dashoffset: 0;
+		stroke: #ff4c4c;
+		fill: #d7d7d8;
+	}
+}
